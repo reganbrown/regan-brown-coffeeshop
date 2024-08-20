@@ -4,8 +4,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: 300;
 }
 

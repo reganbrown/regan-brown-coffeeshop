@@ -1,11 +1,16 @@
-/* set value to allow for rem's to be in units of 10 */
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /* Remove margin and padding from default element styling */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }

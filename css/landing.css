@@ -1,0 +1,109 @@
+/* about section  */
+.about-section {
+  display: flex;
+  background-color: #fff0ed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 150px 40px;
+}
+
+.about-section__title {
+  margin-bottom: 20px;
+}
+
+.about-section__tag-line {
+  width: 350px;
+  padding-bottom: 40px;
+}
+
+.about-section__hero-img {
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+/* buttons styling */
+
+.default-button {
+  font-size: 2.2rem;
+  font-weight: 400;
+  background-color: #5bacc3;
+  color: #fff;
+  border: none;
+  width: 180px;
+  padding: 15px;
+}
+
+/* product section */
+
+.products-section {
+  background-color: #f7f7f7;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.products__title {
+  padding-bottom: 60px;
+  color: #393939;
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  display: inline-block;
+  width: 340px;
+  height: 480px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-card__image {
+  height: 25rem;
+  margin: 20px;
+}
+
+.product-card__title {
+  margin: 10px;
+}
+
+.product-card__price {
+  margin: 30px;
+  color: #5bacc3;
+  font-size: 3.2rem;
+}
+
+.product-section__button {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Discounts section */
+
+.discount-section {
+  height: 550px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.discount-section__p {
+  font-size: 4.5rem;
+  font-weight: 400;
+  width: 90%;
+  background-color: #393939;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+}
+
+.discount-section__p--code {
+  font-weight: 700;
+}

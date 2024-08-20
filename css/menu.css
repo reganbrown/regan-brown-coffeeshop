@@ -1,0 +1,82 @@
+/* menu hero image, title, background */
+
+.menu-nav__background {
+  width: 100vw;
+  height: 50vw;
+  background-image: url("../assets/coffee-circle.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.menu-nav__title-box {
+  height: 30%;
+  width: 20%;
+  background-color: #393939;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menu-nav__title {
+  font-size: 5vw;
+}
+
+/* Menu navigation items */
+.menu-nav__nav-bar {
+  width: 100%;
+  background-color: #393939;
+  text-align: center;
+  height: 7rem;
+}
+
+.menu-nav__list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.menu-nav__list-item {
+  display: inline-block;
+  margin: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid #5bacc3;
+}
+
+.menu-nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+/* Menu Cards  */
+
+.menu__section--background-pink {
+  background-color: #fff0ed;
+  text-align: center;
+}
+
+.menu__section--background-white {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.menu-section__header {
+  padding: 20px 0;
+}
+
+.menu-card {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.menu-card__description {
+  font-style: italic;
+}
+
+.menu-card__price {
+  color: #5bacc3;
+  font-size: 2rem;
+}

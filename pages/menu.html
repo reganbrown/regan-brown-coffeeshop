@@ -7,8 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../scss/partials/global.css" />
+    <link rel="stylesheet" href="../scss/menu.css" />
     <title>Coffee Shop - Menu</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
           <a href="../index.html">
             <img
               src="../assets/coffee-beans-logo-and-footer.svg"
-              alt="coffee beans icon"
+              alt="a logo icon photo of coffee beans"
               class="nav-bar__icon icons"
             />
 
@@ -48,120 +48,114 @@
 
     <!-- main body of content -->
     <main>
-      <!-- the menu -->
-      <article class="menu">
-        <!-- menu top: menu image, title, and menu navigation -->
-        <section class="menu-nav">
-          <div class="menu-nav__background">
-            <div class="menu-nav__title-box">
-              <h1 class="menu-nav__title">MENU</h1>
-            </div>
+      <!-- menu top: menu image, title, and menu navigation -->
+      <section class="menu-nav">
+        <div class="menu-nav__background">
+          <div class="menu-nav__title-box">
+            <h1 class="menu-nav__title">MENU</h1>
           </div>
-          <div class="menu-nav__nav-bar">
-            <ul class="menu-nav__list">
-              <li class="menu-nav__list-item">
-                <a href="#hot-drinks-section" class="menu-nav__link"
-                  >HOT DRINKS</a
-                >
-              </li>
-              <li class="menu-nav__list-item">
-                <a href="#cold-drinks-section" class="menu-nav__link"
-                  >COLD DRINKS</a
-                >
-              </li>
-              <li class="menu-nav__list-item">
-                <a href="#pastries-section" class="menu-nav__link">PASTRIES</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+        </div>
+        <div class="menu-nav__nav-bar">
+          <ul class="menu-nav__list">
+            <li class="menu-nav__list-item">
+              <a href="#hot-drinks-section" class="menu-nav__link"
+                >HOT DRINKS</a
+              >
+            </li>
+            <li class="menu-nav__list-item">
+              <a href="#cold-drinks-section" class="menu-nav__link"
+                >COLD DRINKS</a
+              >
+            </li>
+            <li class="menu-nav__list-item">
+              <a href="#pastries-section" class="menu-nav__link">PASTRIES</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- Hot Drinks Section -->
-        <section id="hot-drinks-section" class="menu__section--background-pink">
-          <!-- Hot Drinks Title-->
-          <div class="menu-section__header">
-            <h2>Hot Drinks</h2>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>In-house brew</h3>
-            <p class="menu-card__description">
-              Our in-house medium roast is a classic balance between sweet
-              vanilla, nutty hazelnut, and a smooth low acidity to bring
-              everything together.
-            </p>
-            <p class="menu-card__price">$2.99</p>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>Espresso</h3>
-            <p class="menu-card__description">
-              A balance between bold and smooth, powerful and sweet, our
-              signature espresso blend is a complex flavor profile. It features
-              strong notes of semi-sweet chocolate and caramel, with mild
-              acidity and a bright floral finish.
-            </p>
-            <p class="menu-card__price">$4.99</p>
-          </div>
-        </section>
+      <!-- Hot Drinks Section -->
+      <section id="hot-drinks-section" class="menu-section__background--pink">
+        <!-- Hot Drinks Title-->
+        <header class="menu-section__header">
+          <h2 class="menu-section__title">Hot Drinks</h2>
+        </header>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">In-house brew</h3>
+          <p class="menu-card__description">
+            Our in-house medium roast is a classic balance between sweet
+            vanilla, nutty hazelnut, and a smooth low acidity to bring
+            everything together.
+          </p>
+          <p class="menu-card__price">$2.99</p>
+        </article>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">Espresso</h3>
+          <p class="menu-card__description">
+            A balance between bold and smooth, powerful and sweet, our signature
+            espresso blend is a complex flavor profile. It features strong notes
+            of semi-sweet chocolate and caramel, with mild acidity and a bright
+            floral finish.
+          </p>
+          <p class="menu-card__price">$4.99</p>
+        </article>
+      </section>
 
-        <!-- Cold Drinks Section -->
-        <section
-          id="cold-drinks-section"
-          class="menu__section--background-white"
-        >
-          <!-- Cold Drinks Title-->
-          <div class="menu-section__header">
-            <h2>Cold Drinks</h2>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>Cold Brew</h3>
-            <p class="menu-card__description">
-              Our bright and delicious coffee blend, brewed over ice to give you
-              a cold coffee freshness with all the flavor of our amazing
-              in-house coffee.
-            </p>
-            <p class="menu-card__price">$3.99</p>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>Iced Chai Latte</h3>
-            <p class="menu-card__description">
-              A creamy drink with a kick, this drink features spicy chai tea
-              blended with your choice of milk and poured over ice.
-            </p>
-            <p class="menu-card__price">$6.99</p>
-          </div>
-        </section>
+      <!-- Cold Drinks Section -->
+      <section id="cold-drinks-section" class="menu-section__background--white">
+        <!-- Cold Drinks Title-->
+        <div class="menu-section__header">
+          <h2 class="menu-section__title">Cold Drinks</h2>
+        </div>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">Cold Brew</h3>
+          <p class="menu-card__description">
+            Our bright and delicious coffee blend, brewed over ice to give you a
+            cold coffee freshness with all the flavor of our amazing in-house
+            coffee.
+          </p>
+          <p class="menu-card__price">$3.99</p>
+        </article>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">Iced Chai Latte</h3>
+          <p class="menu-card__description">
+            A creamy drink with a kick, this drink features spicy chai tea
+            blended with your choice of milk and poured over ice.
+          </p>
+          <p class="menu-card__price">$6.99</p>
+        </article>
+      </section>
 
-        <!-- Pastries Section-->
-        <section id="pastries-section" class="menu__section--background-pink">
-          <!-- Pastries Title-->
-          <div class="menu-section__header">
-            <h2>Pastries</h2>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>Bacon Oatmeal Raisin Cookie</h3>
-            <p class="menu-card__description">
-              An infused bacon, sugar and egg mixture is folded into a perfect
-              blend of oats, flour, raisins and cinnamon to create a soft and
-              chewy textured cookie.
-            </p>
-            <p class="menu-card__price">$3.50</p>
-          </div>
-          <!-- Each item card: Title, Description and Price-->
-          <div class="menu-card">
-            <h3>Blueberry, Lemon and Thyme Muffin</h3>
-            <p class="menu-card__description">
-              Tart and sweet, this classic blueberry and lemon combination comes
-              with an earthy twist.
-            </p>
-            <p class="menu-card__price">$2.50</p>
-          </div>
-        </section>
-      </article>
+      <!-- Pastries Section-->
+      <section id="pastries-section" class="menu-section__background--pink">
+        <!-- Pastries Title-->
+        <div class="menu-section__header">
+          <h2 class="menu-section__title">Pastries</h2>
+        </div>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">Bacon Oatmeal Raisin Cookie</h3>
+          <p class="menu-card__description">
+            An infused bacon, sugar and egg mixture is folded into a perfect
+            blend of oats, flour, raisins and cinnamon to create a soft and
+            chewy textured cookie.
+          </p>
+          <p class="menu-card__price">$3.50</p>
+        </article>
+        <!-- Each item card: Title, Description and Price-->
+        <article class="menu-card">
+          <h3 class="menu-card__title">Blueberry, Lemon and Thyme Muffin</h3>
+          <p class="menu-card__description">
+            Tart and sweet, this classic blueberry and lemon combination comes
+            with an earthy twist.
+          </p>
+          <p class="menu-card__price">$2.50</p>
+        </article>
+      </section>
     </main>
   </body>
 </html>

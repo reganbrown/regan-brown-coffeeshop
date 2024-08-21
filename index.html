@@ -7,8 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./scss/partials/global.css" />
+    <link rel="stylesheet" href="./scss/landing.css" />
     <title>Coffee Shop - Home</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
           <a href="./index.html">
             <img
               src="./assets/coffee-beans-logo-and-footer.svg"
-              alt="coffee beans icon"
+              alt="a logo icon photo of coffee beans"
               class="nav-bar__icon icons"
             />
 
@@ -56,14 +56,12 @@
             Coffee is a brewed drink prepared from roasted coffee beans, the
             seeds of berries from certain Coffea species.
           </p>
-          <a href="pages/menu.html"
-            ><button class="default-button">SHOP NOW</button></a
-          >
+          <a href="pages/menu.html" class="button-link">SHOP NOW</a>
         </div>
         <div class="about-section__right">
           <img
             src="./assets/coffeebeans-hero.png"
-            alt="coffee bag"
+            alt="image of a bag of coffee"
             class="about-section__hero-img"
           />
         </div>
@@ -73,8 +71,8 @@
       <section class="products">
         <h2 class="products__title">Our Products</h2>
         <!-- each product card-->
-        <div class="product-cards">
-          <div class="product-card">
+        <div class="products__body">
+          <article class="product-card">
             <div class="product-card__top">
               <img
                 src="./assets/coffeebeans.png"
@@ -91,13 +89,13 @@
                 <p class="product-card__price">$19</p>
               </div>
             </div>
-          </div>
+          </article>
           <!-- each product card-->
-          <div class="product-card">
+          <article class="product-card">
             <div class="product-card__top">
               <img
                 src="./assets/coldbrew.png"
-                alt="coffee beans"
+                alt="image of a can of cold brew coffee drink"
                 class="product-card__image"
               />
             </div>
@@ -110,13 +108,13 @@
                 <p class="product-card__price">$5</p>
               </div>
             </div>
-          </div>
+          </article>
           <!-- each product card-->
-          <div class="product-card">
+          <article class="product-card">
             <div class="product-card__top">
               <img
                 src="./assets/inhousebrew.png"
-                alt="coffee beans"
+                alt="image of a to-go paper coffee cup"
                 class="product-card__image"
               />
             </div>
@@ -129,14 +127,12 @@
                 <p class="product-card__price">$3</p>
               </div>
             </div>
-          </div>
+          </article>
         </div>
         <!-- view all button -->
-        <a href="pages/menu.html"
-          ><button class="default-button product-section__button">
-            VIEW ALL
-          </button></a
-        >
+        <div class="products__footer">
+          <a href="pages/menu.html" class="button-link"> VIEW ALL </a>
+        </div>
       </section>
 
       <!-- Discount Bar -->
@@ -150,12 +146,12 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer__address">
+      <section class="footer__address">
         <h3 class="footer__title">Address</h3>
         <p>503 Broadway Penthouse</p>
         <p>New York</p>
-      </div>
-      <div class="footer__hours">
+      </section>
+      <section class="footer__hours">
         <h3 class="footer__title">Hours</h3>
         <p>
           <span class="footer__hours--open-days">Monday - Friday:</span> 9am -
@@ -165,23 +161,31 @@
           <span class="footer__hours--open-days">Saturday - Sunday:</span> 10am
           - 5pm
         </p>
-      </div>
-      <div class="footer__socials">
+      </section>
+      <section class="footer__socials">
         <h3 class="footer__title">Social</h3>
         <a href="https://www.facebook.com">
-          <img src="./assets/Facebook-Icon.svg" alt="Facebook" class="icons" />
+          <img
+            src="./assets/Facebook-Icon.svg"
+            alt="Facebook logo icon"
+            class="icons"
+          />
         </a>
         <a href="https://www.yelp.com">
-          <img src="./assets/Yelp-Icon.svg" alt="Yelp" class="icons" />
+          <img
+            src="./assets/Yelp-Icon.svg"
+            alt="Yelp logo icon"
+            class="icons"
+          />
         </a>
         <a href="https://www.instagram.com">
           <img
             src="./assets/Instagram-Icon.svg"
-            alt="Instagram"
+            alt="Instagram logo icon"
             class="icons"
           />
         </a>
-      </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -7,6 +7,12 @@
   padding: 60px 150px 40px;
 }
 
+.about-section__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .about-section__title {
   margin-bottom: 20px;
 }
@@ -23,7 +29,8 @@
 
 /* buttons styling */
 
-.default-button {
+.button-link {
+  text-align: center;
   font-size: 2.2rem;
   font-weight: 400;
   background-color: #5bacc3;
@@ -31,6 +38,7 @@
   border: none;
   width: 18rem;
   padding: 15px;
+  text-decoration: none;
 }
 
 /* product section */
@@ -46,10 +54,17 @@
   color: #393939;
 }
 
-.product-cards {
+.products__body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.products__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
 }
 
 .product-card {

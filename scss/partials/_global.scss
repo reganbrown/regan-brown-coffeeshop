@@ -1,0 +1,144 @@
+/* variables */
+$nitro-blue: #5bacc3;
+$nitro-pink: #fff0ed;
+$graphite: #393939;
+$gray: #909090;
+$lightgray: #f7f7f7;
+$white: #fff;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove margin and padding from default element styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting default values (fonts) */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.icons {
+  width: 5rem;
+}
+
+/* Header: icon, title, nav bar */
+header {
+  background-color: $nitro-pink;
+}
+
+header * {
+  display: inline-block;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+  &__icon {
+    padding-top: 3rem;
+    margin-left: 2rem;
+  }
+
+  &__title {
+    color: $graphite;
+    margin-right: 2rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__list-item {
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $graphite;
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin: 2rem;
+  }
+
+  &__link--featured {
+    color: $nitro-blue;
+  }
+}
+
+/* Footer section */
+.footer {
+  background-color: $nitro-pink;
+  height: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    font-size: 3.3rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  &__hours--open-days {
+    font-weight: 700;
+  }
+
+  &__image--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__image--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__image-logo--left {
+    width: 120px;
+    position: relative;
+    top: 3rem;
+    right: 4rem;
+    opacity: 25%;
+  }
+
+  &__image-logo--right {
+    width: 120px;
+    position: relative;
+    bottom: 3rem;
+    left: 4rem;
+    opacity: 25%;
+  }
+}

@@ -1,82 +1,95 @@
+@use "./partials/global" as *;
 /* menu hero image, title, background */
 
-.menu-nav__background {
-  width: 100vw;
-  height: 50vw;
-  background-image: url("../assets/coffee-circle.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+.menu-nav {
+  &__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45vw;
+    background-image: url("../assets/coffee-circle.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  &__title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vw;
+    width: 23vw;
+    color: #fff;
+    border: 5px solid $nitro-blue;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+  }
+  &__title-box--background {
+    background-color: $graphite;
+    height: 14vw;
+    width: 23vw;
+  }
+  &__title {
+    font-size: 5vw;
+  }
+
+  &__nav-bar {
+    width: 100%;
+    background-color: $graphite;
+    text-align: center;
+    height: 7rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+  }
+
+  &__list-item {
+    display: inline-block;
+    margin: 2rem;
+    padding-left: 2rem;
+    border-left: 4px solid $nitro-blue;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
 }
 
-.menu-nav__title-box {
-  height: 30%;
-  width: 20%;
-  background-color: #393939;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto;
-}
+.menu-section {
+  &__header {
+    padding: 20px 0;
+  }
+  &__background--pink {
+    background-color: $nitro-pink;
+    text-align: center;
+  }
 
-.menu-nav__title {
-  font-size: 5vw;
-}
-
-/* Menu navigation items */
-.menu-nav__nav-bar {
-  width: 100%;
-  background-color: #393939;
-  text-align: center;
-  height: 7rem;
-}
-
-.menu-nav__list {
-  list-style-type: none;
-  padding-inline-start: 0px;
-}
-
-.menu-nav__list-item {
-  display: inline-block;
-  margin: 2rem;
-  padding-left: 2rem;
-  border-left: 4px solid #5bacc3;
-}
-
-.menu-nav__link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2.1rem;
-  font-weight: 400;
+  &__background--white {
+    background-color: $lightgray;
+    text-align: center;
+  }
 }
 
 /* Menu Cards  */
-
-.menu-section__background--pink {
-  background-color: #fff0ed;
-  text-align: center;
-}
-
-.menu-section__background--white {
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.menu-section__header {
-  padding: 20px 0;
-}
 
 .menu-card {
   text-align: center;
   width: 40%;
   margin: auto;
   padding: 20px 0;
-}
 
-.menu-card__description {
-  font-style: italic;
-}
+  &__description {
+    font-style: italic;
+  }
 
-.menu-card__price {
-  color: #5bacc3;
-  font-size: 2rem;
+  &__price {
+    color: $nitro-blue;
+    font-size: 2rem;
+  }
 }

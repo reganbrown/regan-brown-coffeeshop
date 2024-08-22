@@ -1,11 +1,11 @@
-@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+@use "./partials/global";
 /* menu hero image, title, background */
 
 .menu-nav {
   &__background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centered();
     width: 100vw;
     height: 45vw;
     background-image: url("../assets/coffee-circle.jpg");
@@ -13,10 +13,9 @@
     background-size: cover;
     text-align: center;
   }
+
   &__title-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centered();
     height: 14vw;
     width: 23vw;
     color: #fff;

@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+@keyframes rotation-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes background-transition {
+  0% {
+    background-color: $graphite;
+  }
+  50% {
+    background-color: $nitro-blue;
+  }
+  100% {
+    background-color: $graphite;
+  }
+}

@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
 /* Remove default styling */
 
 html {
@@ -22,63 +23,83 @@ html {
 
 body {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: $font-copy;
 
   h1,
   h2 {
     font-size: 6rem;
-    font-weight: 300;
+    font-weight: $font-title;
   }
   h3 {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: $font-title;
   }
   p {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: $font-copy;
   }
 }
 
-/* Header: icon, title, nav bar */
-header {
-  background-color: $nitro-pink;
+/* buttons styling */
+
+.button {
+  &__background {
+    @include button-dimensions;
+    background-color: $nitro-blue;
+  }
+
+  &__link {
+    @include button-dimensions;
+    @include flex-centered;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: $white;
+    border: 2px solid $graphite;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.1s;
+  }
+  &__link:active {
+    bottom: 0px;
+    right: 0px;
+  }
 }
 
-header * {
-  display: inline-block;
-}
-
+/* top navigation */
 .nav-bar {
+  background-color: $nitro-pink;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  padding-bottom: $spacing-half;
 
   &__icon {
     padding-top: 3rem;
-    margin-left: 2rem;
+    margin-left: $spacing-standard;
     width: $iconsize;
   }
 
   &__title {
+    display: inline-block;
     color: $graphite;
-    margin-right: 2rem;
   }
 
   &__right {
     display: flex;
     align-items: flex-end;
+    padding-right: $spacing-standard;
   }
 
   &__list-item {
-    list-style-type: none;
+    display: inline-block;
   }
 
   &__link {
+    display: inline-block;
     text-decoration: none;
     color: $graphite;
     font-size: 2.1rem;
-    font-weight: 400;
-    margin: 2rem;
+    margin: $spacing-standard;
   }
 
   &__link--featured {
@@ -89,21 +110,27 @@ header * {
 /* Footer section */
 .footer {
   background-color: $nitro-pink;
-  height: 25rem;
+  height: 27rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   position: relative;
+  overflow: hidden;
 
   &__title {
     font-size: 3.3rem;
-    font-weight: 300;
-    padding-bottom: 20px;
+    padding-bottom: $spacing-standard;
   }
 
   &__hours--open-days {
-    font-weight: 700;
+    font-weight: $font-bold;
   }
+
+  &__icon {
+    width: $iconsize;
+  }
+
+  /* Background watermarks in footer */
 
   &__image--left {
     position: absolute;
@@ -118,22 +145,14 @@ header * {
   }
 
   &__image-logo--left {
-    width: 120px;
-    position: relative;
+    @include footer-image;
     top: 3rem;
     right: 4rem;
-    opacity: 25%;
   }
 
   &__image-logo--right {
-    width: 120px;
-    position: relative;
+    @include footer-image;
     bottom: 3rem;
     left: 4rem;
-    opacity: 25%;
-  }
-
-  &__icon {
-    width: $iconsize;
   }
 }

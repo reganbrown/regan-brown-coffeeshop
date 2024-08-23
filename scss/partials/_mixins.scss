@@ -3,3 +3,49 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin box-with-shadow {
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+
+@mixin button-dimensions {
+  width: 18rem;
+  height: 6rem;
+}
+
+@mixin titlebox-dimensions {
+  height: 14vw;
+  width: 21vw;
+}
+
+@mixin card-dimensions {
+  width: 33rem;
+  height: 44rem;
+}
+
+@mixin square-dimensions {
+  width: 40rem;
+  height: 40rem;
+}
+
+@mixin infity-animation {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@mixin background-image-styling {
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin footer-image {
+  width: 120px;
+  position: relative;
+  opacity: 25%;
+}

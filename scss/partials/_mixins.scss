@@ -19,6 +19,11 @@
   height: 6rem;
 }
 
+@mixin button-dimensions-large {
+  width: 20rem;
+  height: 6rem;
+}
+
 @mixin titlebox-dimensions {
   height: 14vw;
   width: 21vw;

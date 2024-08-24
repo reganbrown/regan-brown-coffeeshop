@@ -60,11 +60,13 @@
   &__background--pink {
     background-color: $nitro-pink;
     text-align: center;
+    height: 53rem;
   }
 
   &__background--white {
     background-color: $lightgray;
     text-align: center;
+    height: 48rem;
   }
 }
 
@@ -73,7 +75,11 @@
 .menu-card {
   width: 35%;
   margin: auto;
-  padding: $spacing-standard;
+  padding: $spacing-standard 0 0 0;
+
+  &__title {
+    font-size: 3.4rem;
+  }
 
   &__description {
     font-style: italic;

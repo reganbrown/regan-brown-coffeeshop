@@ -7,12 +7,14 @@
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: $nitro-pink;
+  padding-top: 10px;
 
   &__left {
     @include flex-column;
     align-items: flex-start;
+    margin-left: 13rem;
   }
 
   &__title {
@@ -20,13 +22,14 @@
   }
 
   &__tag-line {
-    width: 35rem;
+    width: 38rem;
     padding-bottom: $spacing-double;
   }
 
   &__hero-img {
     margin-top: $spacing-double;
     padding-bottom: $spacing-double;
+    margin-right: 20rem;
   }
 }
 
@@ -37,12 +40,14 @@
   text-align: center;
 
   &__title {
-    padding: $spacing-triple;
+    padding-top: $spacing-triple;
+    padding-bottom: 50px;
     color: $graphite;
   }
 
   &__body {
     @include flex-centered;
+    gap: $spacing-standard;
   }
 
   &__footer {
@@ -106,16 +111,20 @@
     justify-content: center;
     align-items: flex-start;
     gap: $spacing-double;
+    position: relative;
+    right: 20px;
   }
 
   &__title {
-    margin-bottom: $spacing-double;
+    margin-bottom: 30px;
   }
 
   &__icons {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    bottom: 8px;
   }
 
   &__icon {
@@ -151,6 +160,43 @@
     @include infity-animation;
     animation-name: rotation-animation;
     animation-duration: 2s;
+  }
+}
+
+/* buttons styling */
+
+.button {
+  &__background {
+    @include button-dimensions;
+    background-color: $nitro-blue;
+  }
+
+  &__background--large {
+    @include button-dimensions-large;
+    position: relative;
+    bottom: 10px;
+  }
+
+  &__link {
+    @include button-dimensions;
+    @include flex-centered;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: $white;
+    border: 2px solid $graphite;
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.1s;
+  }
+
+  &__link--large {
+    @include button-dimensions-large;
+  }
+
+  &__link:active {
+    bottom: 0px;
+    right: 0px;
   }
 }
 

@@ -40,38 +40,13 @@ body {
   }
 }
 
-/* buttons styling */
-
-.button {
-  &__background {
-    @include button-dimensions;
-    background-color: $nitro-blue;
-  }
-
-  &__link {
-    @include button-dimensions;
-    @include flex-centered;
-    font-size: 2.2rem;
-    text-decoration: none;
-    color: $white;
-    border: 2px solid $graphite;
-    position: relative;
-    bottom: 5px;
-    right: 5px;
-    transition: 0.1s;
-  }
-  &__link:active {
-    bottom: 0px;
-    right: 0px;
-  }
-}
-
 /* top navigation */
 .nav-bar {
   background-color: $nitro-pink;
   display: flex;
   justify-content: space-between;
   padding-bottom: $spacing-half;
+  align-items: flex-end;
 
   &__icon {
     padding-top: 3rem;
@@ -80,14 +55,17 @@ body {
   }
 
   &__title {
+    font-size: 5rem;
     display: inline-block;
     color: $graphite;
+    position: relative;
+    bottom: 5px;
   }
 
   &__right {
     display: flex;
     align-items: flex-end;
-    padding-right: $spacing-standard;
+    padding-right: $spacing-half;
   }
 
   &__list-item {
@@ -99,7 +77,7 @@ body {
     text-decoration: none;
     color: $graphite;
     font-size: 2.1rem;
-    margin: $spacing-standard;
+    margin: $spacing-standard 21px;
   }
 
   &__link--featured {
@@ -110,12 +88,13 @@ body {
 /* Footer section */
 .footer {
   background-color: $nitro-pink;
-  height: 27rem;
+  height: 26rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding-top: $spacing-double;
 
   &__title {
     font-size: 3.3rem;

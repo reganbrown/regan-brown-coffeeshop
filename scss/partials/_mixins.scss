@@ -14,13 +14,8 @@
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
 }
 
-@mixin button-dimensions {
-  width: 18rem;
-  height: 6rem;
-}
-
-@mixin button-dimensions-large {
-  width: 20rem;
+@mixin button-dimensions($width) {
+  width: $width;
   height: 6rem;
 }
 
@@ -39,9 +34,11 @@
   height: 40rem;
 }
 
-@mixin infity-animation {
+@mixin infity-animation($name, $duration) {
+  animation-name: $name;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  animation-duration: $duration;
 }
 
 @mixin background-image-styling {
@@ -53,4 +50,12 @@
   width: 120px;
   position: relative;
   opacity: 25%;
+}
+
+@mixin relative-position($top: null, $bottom: null, $left: null, $right: null) {
+  position: relative;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
 }

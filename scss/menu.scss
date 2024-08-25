@@ -13,19 +13,15 @@
   }
   &__title-box--background {
     @include titlebox-dimensions;
+    @include relative-position($top: $menu-offset, $left: $menu-offset);
     background-color: $graphite;
-    position: relative;
-    top: $menu-offset;
-    left: $menu-offset;
   }
   &__title-box {
     @include flex-centered;
     @include titlebox-dimensions;
+    @include relative-position($bottom: $menu-offset, $right: $menu-offset);
     color: $white;
     border: 5px solid $nitro-blue;
-    position: relative;
-    bottom: $menu-offset;
-    right: $menu-offset;
   }
 
   &__title {

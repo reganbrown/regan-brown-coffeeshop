@@ -81,6 +81,7 @@ body {
   }
 
   &__link--featured {
+    @extend .nav-bar__link;
     color: $nitro-blue;
   }
 }

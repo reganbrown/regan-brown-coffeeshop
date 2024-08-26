@@ -48,7 +48,6 @@
 
 @mixin footer-image {
   width: 120px;
-  position: relative;
   opacity: 25%;
 }
 
@@ -58,4 +57,10 @@
   bottom: $bottom;
   left: $left;
   right: $right;
+}
+
+@mixin menu-background($color, $height) {
+  background-color: $color;
+  text-align: center;
+  height: $height;
 }

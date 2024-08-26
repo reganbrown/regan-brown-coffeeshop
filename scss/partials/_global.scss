@@ -55,11 +55,10 @@ body {
   }
 
   &__title {
+    @include relative-position($bottom: 5px);
     font-size: 5rem;
     display: inline-block;
     color: $graphite;
-    position: relative;
-    bottom: 5px;
   }
 
   &__right {
@@ -126,13 +125,11 @@ body {
 
   &__image-logo--left {
     @include footer-image;
-    top: 3rem;
-    right: 4rem;
+    @include relative-position($top: 3rem, $right: 4rem);
   }
 
   &__image-logo--right {
     @include footer-image;
-    bottom: 3rem;
-    left: 4rem;
+    @include relative-position($bottom: 3rem, $left: 4rem);
   }
 }

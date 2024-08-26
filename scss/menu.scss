@@ -54,15 +54,11 @@
     padding: $spacing-standard;
   }
   &__background--pink {
-    background-color: $nitro-pink;
-    text-align: center;
-    height: 53rem;
+    @include menu-background($nitro-pink, 53rem);
   }
 
   &__background--white {
-    background-color: $lightgray;
-    text-align: center;
-    height: 48rem;
+    @include menu-background($lightgray, 48rem);
   }
 }
 
